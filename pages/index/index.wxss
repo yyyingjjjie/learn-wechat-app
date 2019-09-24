@@ -1,0 +1,6 @@
+/* pages/index/index.wxss */
+.title{
+  color: red;
+  font-size: 16px;
+  font-weight: bolder;
+}
