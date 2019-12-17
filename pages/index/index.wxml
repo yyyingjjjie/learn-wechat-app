@@ -1,2 +1,13 @@
 <!--pages/index/index.wxml-->
-<text class="title">hello world</text>
+<image src="../../assets/images/app-header.png" class="image-header"/>
+<view class="api-content">
+  <view class="parent-item" wx:for="{{serviceTitleList}}" wx:key="{{index}}">
+    <icon type="success" size="20"></icon>
+    <text>{{item.module_name}}</text>
+    <view class="child-wrap">
+      <view class="child-item" wx:for="{{item.children}}" wx:key="{{index}}" wx:for-item="xx" bindtap="getUrlByService" data-name="{{xx.childName}}" data-eName="{{xx.childEName}}" data-pName="{{item.module_name}}" data-urlList="item.urlList">
+        {{xx.childName}}
+      </view>
+    </view>
+  </view>
+</view>

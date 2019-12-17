@@ -1,1 +1,63 @@
 /* pages/about/about.wxss */
+.api-url{
+  padding: 16px;
+  background: #f5f6f7;
+}
+.api-url-header{
+  padding: 0 16px;
+  height: 50px;
+  line-height: 50px;
+  background: #fff;
+  font-size: 14px;
+  color: #9f9f9f;
+}
+.api-url-content{
+  margin-top: 16px;
+}
+.collapes-item{
+  padding: 16px;
+  background: #fff;
+  margin-bottom: 16px;
+  min-height: 60px;
+  position: relative;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+.item-url,.item-desc{
+  line-height: 30px;
+  font-size: 14px;
+  color: #54a0fd;
+  overflow: hidden;
+  width: 100%;
+  word-wrap: break-word;
+  word-break: break-all;
+  white-space: pre-line;
+}
+.api-url-method{
+  padding: 0 10px;
+  min-width: 28px;
+  height: 26px;
+  line-height: 26px;
+  text-align: center;
+  margin-right: 10px;
+  color: #00ba7c;
+  background-color: rgba(226,247,239,1);
+  border-radius: 2px;
+}
+.api-status{
+  color: red;
+  margin-left: 5px;
+  font-size: 12px;
+  font-style: italic;
+}
+.item-info{
+  margin-top: 10px;
+  font-size: 14px;
+  overflow: hidden;
+  color: #9f9f9f;
+}
+.api-number{
+  float: left;
+}
+.api-version{
+  float: right;
+}

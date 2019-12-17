@@ -1,0 +1,63 @@
+<!--pages/detail/detail.wxml-->
+<view class="api-url">
+  <view class="api-url-header">
+    <text class="firstName">{{firstName}}</text>
+    <text>></text>
+    <text class="name">{{name}}</text>
+    <text>></text>
+    <text class="name">{{number}}</text>
+  </view>
+  <view class="api-url-content">
+    <i-card title="公共参数" i-class="icard">
+      <view slot="content">
+        <i-cell-group i-class="cellGroup" wx:for="{{publicData}}" wx:key="{{index}}">
+          <i-cell title="参数名称" value="{{item.publicPara}}"></i-cell>
+          <i-cell title="类型" value="{{item.dataType}}"></i-cell>
+          <i-cell title="描述" value="{{item.paraDesc}}"></i-cell>
+          <i-cell title="传递方式" value="{{item.delivery}}"></i-cell>
+          <i-cell title="是否必须" value="{{item.required}}"></i-cell>
+        </i-cell-group>
+      </view>
+    </i-card>
+    <i-card title="请求参数" style="margin:0;" i-class="icard">
+      <view slot="content">
+        <i-cell-group i-class="cellGroup" wx:for="{{requestData}}" wx:key="{{index}}">
+          <i-cell title="参数名称" value="{{item.requestPara}}"></i-cell>
+          <i-cell title="类型" value="{{item.dataType}}"></i-cell>
+          <i-cell title="描述" value="{{item.paraDesc}}"></i-cell>
+          <i-cell title="传递方式" value="{{item.delivery}}"></i-cell>
+          <i-cell title="是否必须" value="{{item.required}}"></i-cell>
+        </i-cell-group>
+      </view>
+    </i-card>
+    <i-card title="响应参数" style="margin:0;" i-class="icard">
+      <view slot="content">
+        <i-cell-group i-class="cellGroup" wx:for="{{responseData}}" wx:key="{{index}}">
+          <i-cell title="参数名称" value="{{item.responsePara}}"></i-cell>
+          <i-cell title="类型" value="{{item.dataType}}"></i-cell>
+          <i-cell title="描述" value="{{item.paraDesc}}"></i-cell>
+          <i-cell title="是否必须" value="{{item.required}}"></i-cell>
+        </i-cell-group>
+      </view>
+    </i-card>
+    <i-card title="业务异常码" i-class="icard">
+      <view slot="content">
+        <i-cell-group i-class="cellGroup" wx:for="{{abnormalData}}" wx:key="{{index}}">
+          <i-cell title="异常码" value="{{item.code}}"></i-cell>
+          <i-cell title="异常描述" value="{{item.codeDesc}}"></i-cell>
+          <i-cell title="解决方案" value="{{item.solu}}"></i-cell>
+        </i-cell-group>
+      </view>
+    </i-card>
+    <i-card title="请求示例" i-class="icard">
+      <view slot="content">
+        <textarea class="textArea">{{requestSample}}</textarea>
+      </view>
+    </i-card>
+    <i-card title="响应示例" i-class="icard">
+      <view slot="content">
+        <textarea class="textArea">{{responseSample}}</textarea>
+      </view>
+    </i-card>
+  </view>
+</view>
