@@ -1,6 +1,9 @@
 <!--pages/index/index.wxml-->
 <image src="../../assets/images/app-header.png" class="image-header"/>
 <view class="api-content">
+<view>新增知识点2</view>
+<view>tag2</view>
+
   <view class="parent-item" wx:for="{{serviceTitleList}}" wx:key="{{index}}">
     <icon type="success" size="20"></icon>
     <text>{{item.module_name}}</text>
